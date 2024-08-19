@@ -7,6 +7,9 @@ const App = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>React homework 1</h1>
+      <h2 style={{ textAlign: "center", marginBottom: "20px", color: "red" }}>
+        Part 1 - User profile
+      </h2>
       <Profile
         name={user.username}
         tag={user.tag}

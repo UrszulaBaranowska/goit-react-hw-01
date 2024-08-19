@@ -4,12 +4,14 @@ import Profile from "./Profile/Profile";
 import user from "./Profile/userData.json";
 import FriendList from "./FriendList/FriendList";
 import friends from "./FriendList/friendListData.json";
+import TransactionHistory from "./TransactionHistory/TransactionHistory";
+import transactions from "./TransactionHistory/transactions.json";
 
 const App = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>React homework 1</h1>
-      <h2 style={{ textAlign: "center", marginBottom: "20px", color: "red" }}>
+      <h2 style={{ textAlign: "center", marginBottom: "35px", color: "red" }}>
         Part 1 - User profile
       </h2>
       <Profile
@@ -22,14 +24,25 @@ const App = () => {
       <h2
         style={{
           textAlign: "center",
-          marginBottom: "20px",
-          marginTop: "20px",
+          marginBottom: "35px",
+          marginTop: "45px",
           color: "red"
         }}
       >
         Part 2 - User Friends List
       </h2>
       <FriendList friends={friends} />
+      <h2
+        style={{
+          textAlign: "center",
+          marginBottom: "35px",
+          marginTop: "45px",
+          color: "red"
+        }}
+      >
+        Part 3 - Transactions History
+      </h2>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

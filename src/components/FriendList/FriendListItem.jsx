@@ -1,4 +1,3 @@
-// src/components/FriendList/FriendListItem.jsx
 import React from "react";
 import styles from "./FriendListItem.module.css";
 
